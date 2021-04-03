@@ -1,2 +1,3 @@
-# nomad-coders
-Me programming with nomad coders
+# Kokoa Clone 2021
+
+Me Programming with Nomad Coders...
