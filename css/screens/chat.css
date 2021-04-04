@@ -1,3 +1,4 @@
+/* body */
 #chat-screen {
     background-color: #abc1d1;
     height: 100%;
@@ -10,9 +11,9 @@
 
 #chat-screen .alt-header {
     position: fixed;
-    width: 100%;
     top: 0;
     z-index: 9999;
+    width: 100%;
     background-color: #9eb6c7;
 }
 
@@ -27,6 +28,7 @@
     }
 }
 
+/* chat.html > main */
 .chat-screen {
     display: flex;
     flex-direction: column;
@@ -37,11 +39,11 @@
 
 .chat__timestamp {
     margin-bottom: 25px;
-    color: white;
-    background-color: #92a4b2;
     padding: 8px 15px;
-    border-radius: 25px;
+    color: white;
     font-size: 14px;
+    background-color: #92a4b2;
+    border-radius: 25px;
 }
 
 @keyframes fadeInLeft {
@@ -57,8 +59,8 @@
 
 .message-row {
     width: 100%;
-    display: flex;
     margin-bottom: 25px;
+    display: flex;
     animation: fadeInLeft 0.8s ease-in-out;
 }
 
@@ -80,9 +82,9 @@
 }
 
 .message__bubble {
-    background-color: white;
     padding: 8px 15px;
     margin-right: 5px;
+    background-color: white;
     border-radius: 15px;
     border-top-left-radius: 0;
     font-size: 18px;
@@ -111,11 +113,10 @@
 }
 
 .message-row--own .message__bubble {
+    margin: 0 0 0 5px;
     background-color: var(--yellow);
     border-top-right-radius: 0;
     border-top-left-radius: 15px;
-    margin-right: 0;
-    margin-left: 5px;
 }
 
 .message-row--own .message__info {
@@ -124,13 +125,13 @@
 
 .reply {
     position: fixed;
-    width: 100%;
     bottom: 0;
-    background-color: white;
+    width: 100%;
+    padding: 5px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 25px;
+    background-color: white;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -139,8 +140,8 @@
 }
 
 .reply .reply__column:last-child {
-    width: calc(100% - 45px);
     position: relative;
+    width: calc(100% - 45px);
 }
 
 .reply i {
@@ -151,7 +152,7 @@
     height: 30px;
     width: 100%;
     padding: 12px;
-    border: 1px solid var(--main-border);
+    border: var(--main-border);
     border-radius: 20px;
     transition: all 0.3s ease-in-out;
 }
@@ -159,8 +160,8 @@
 .reply__column:last-child > i,
 .reply__column:last-child button {
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
 }
 
 .reply__column:last-child > i {
@@ -169,11 +170,11 @@
 }
 
 .reply__column button {
-    background-color: var(--yellow);
-    border: none;
     width: 30px;
     height: 30px;
+    border: none;
     border-radius: 15px;
+    background-color: var(--yellow);
 }
 .reply__column button i {
     opacity: 1;
